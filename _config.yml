@@ -33,7 +33,7 @@ yat:
 # sitemap: false
 
 # theme: owner/name --> Don't forget to remove/comment the gem-based theme option
-remote_theme: "jeffreytse/jekyll-theme-yat"
+theme: jekyll-theme-yat
 
 # this is used to display publications in the right categories order
 # be sure to match default category names defined in site.defaults
