@@ -12,7 +12,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Personal page of astrophysicist Julia Venturini
 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "jventu.github.io/julias-page" # the base hostname & protocol for your site, e.g. http://example.com
 favicon: "" # the favicon for your site
 
 # Yat date format
