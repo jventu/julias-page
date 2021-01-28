@@ -1,0 +1,24 @@
+{%- if include.keys -%}
+  {%- assign keys = include.keys -%}
+{%- endif -%}
+
+{%- if include.field -%}
+  {%- assign field = include.field -%}
+{%- endif -%}
+
+<div class="page-segments">
+  <ul class="page-segments-list">
+    {% for key in keys %}
+    <h2 id="{{ key  | replace: ' ','%20' }}" class="segment-name">{{ key }}</h2>
+      {% assign items = site.posts | where: field, key %}
+      <table class="table1">
+      {% for item in items %}
+        {% if item != nil %}
+        <tr> {% include views/post-item.html %} </tr>
+        {% endif %}
+      {% endfor %}
+    </table>
+    {% endfor %}
+  </ul>
+</div>
+

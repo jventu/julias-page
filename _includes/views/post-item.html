@@ -1,0 +1,13 @@
+{%- if include.item -%}
+  {%- assign item = include.item -%}
+{%- endif -%}
+
+{%- assign post = item -%}
+
+{% assign date_format = site.yat.date_format | default: "%b %-d, %Y" %}
+<th style="text-align:right;  width: 15%;"><span class="post-meta" style="white-space: nowrap;">{{ post.date | date: date_format }}</span></th>
+<th><span>
+  <a class="post-link" href="{{ post.url | relative_url }}">
+    {{ post.title | escape }}
+  </a>
+</span></th>

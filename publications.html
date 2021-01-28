@@ -1,0 +1,17 @@
+---
+layout: framework
+sidebar: category-list2
+title: Publications
+---
+
+{%- if site.posts.size > 0 -%}
+
+  {%- include functions.html func='log' level='debug' msg='Get value' -%}
+  {%- include functions.html func='get_categories' -%}
+  {% assign categories = site.publications-categories %}
+
+  {% assign keys = categories %}
+  {% assign field = 'categories' %}
+  {%- include views/segments.html -%}
+
+{%- endif -%}
