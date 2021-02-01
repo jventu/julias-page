@@ -12,6 +12,4 @@ Comet-like orbits with low perihelion distances tend to be affected by relativis
 
 Publisher-link: [here](https://www.cambridge.org/core/services/aop-cambridge-core/content/view/S1743921310001596)
 
-Arxiv-link: [here](https://arxiv.org/abs/1105.5108)
-
 ---

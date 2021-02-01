@@ -17,6 +17,6 @@ Conclusions. Although the possible ranges of interior structures are large, stru
 
 Publisher-link: [https://doi.org/10.1051/0004-6361/201628708]( https://doi.org/10.1051/0004-6361/201628708  )
 
-Arxiv-link: [https://arxiv.org/abs/1609.03908](https://arxiv.org/abs/1609.03908)
+Arxiv-link: [https://arxiv.org/abs/1609.03908](https://arxiv.org/abs/1609.03909)
 
 ---
