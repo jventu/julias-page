@@ -3,7 +3,7 @@ layout: post
 title: "Why do more massive stars host larger planets?"
 subtitle: "Accepted in A&A"
 categories: [Co-Author]
-tags: [Michael Lozovsky, Ravit Helled, Illaria Pascucci, Caroline Dorn, Julia Venturini, Robert Feldmann]
+tags: [M. Lozovsky, R. Helled, I. Pascucci, C. Dorn, J. Venturini, R. Feldmann]
 ---
 
 It has been suggested that planetary radii increase with the stellar mass, for planets below 6 R⊕ and host below 1 M⊙. In this study, we explore whether this inferred relation between planetary size and the host star's mass can be explained by a larger planetary mass among planets orbiting more massive stars, inflation of the planetary radius due to the difference in stellar irradiation, or different planetary compositions and structures. 
