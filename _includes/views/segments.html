@@ -9,7 +9,12 @@
 <div class="page-segments">
   <ul class="page-segments-list">
     {% for key in keys %}
+    {% if key == 'Co-Author' %}
+    <h2 id="{{ key  | replace: ' ','%20' }}" class="segment-name">{{ key }} (selected publications)</h2>
+    {% else %}
     <h2 id="{{ key  | replace: ' ','%20' }}" class="segment-name">{{ key }}</h2>
+    {% endif %}
+    
       {% assign items = site.posts | where: field, key %}
       <table class="table1">
       {% for item in items %}
