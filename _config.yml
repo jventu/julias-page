@@ -7,7 +7,7 @@
 title: Julia Venturini
 email: julia.venturini@issibern.ch
 author: Julia Venturini
-copyright: Copyright © 2020
+copyright: Copyright © 2025
 description: >- # this means to ignore newlines until "baseurl:"
   Personal page of astrophysicist Julia Venturini
 
@@ -42,6 +42,13 @@ publications-categories:
   - "Co-Author"
   - "Conference proceedings"
 
+talks-categories:
+  - "Invited Talks"
+  - "Contributed Talks"
+  - "Outreach"
+#collections:
+#  talks:
+#    output: true
 # If you want to change site language, you can set lang option
 #  lang: "en"  # default lang is en
 
@@ -96,6 +103,7 @@ header_pages:
   - about.html
   - CV.html
   - publications.html
+  - talks.html
   
 
 # Page default value
