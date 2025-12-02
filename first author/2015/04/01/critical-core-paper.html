@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <meta name="google-translate-customization" content="108d9124921d80c3-80e20d618ff053c8-g4f02ec6f3dba68b7-c"></meta> --><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Critical core mass for enriched envelopes: the role of $H_2O$ condensation | Julia Venturini</title>
+<meta name="generator" content="Jekyll v4.4.1">
+<meta property="og:title" content="Critical core mass for enriched envelopes: the role of $H_2O$ condensation">
+<meta name="author" content="Julia Venturini">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="Context: Within the core accretion scenario of planetary formation, most simulations performed so far always assume the accreting envelope to have a solar composition. From the study of meteorite showers on Earth and numerical simulations, we know that planetesimals must undergo thermal ablation and disruption when crossing a protoplanetary envelope. Thus, once the protoplanet has acquired an atmosphere, not all planetesimals reach the core intact, i.e. the primordial envelope (mainly H and He) gets enriched in volatiles and silicates from the planetesimals. This change of envelope composition during the formation can have a significant effect on the final atmospheric composition and on the formation timescale of giant planets.">
+<meta property="og:description" content="Context: Within the core accretion scenario of planetary formation, most simulations performed so far always assume the accreting envelope to have a solar composition. From the study of meteorite showers on Earth and numerical simulations, we know that planetesimals must undergo thermal ablation and disruption when crossing a protoplanetary envelope. Thus, once the protoplanet has acquired an atmosphere, not all planetesimals reach the core intact, i.e. the primordial envelope (mainly H and He) gets enriched in volatiles and silicates from the planetesimals. This change of envelope composition during the formation can have a significant effect on the final atmospheric composition and on the formation timescale of giant planets.">
+<link rel="canonical" href="juliaventurini.com/first%20author/2015/04/01/critical-core-paper.html">
+<meta property="og:url" content="juliaventurini.com/first%20author/2015/04/01/critical-core-paper.html">
+<meta property="og:site_name" content="Julia Venturini">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2015-04-01T00:00:00+00:00">
+<meta name="twitter:card" content="summary">
+<meta property="twitter:title" content="Critical core mass for enriched envelopes: the role of $H_2O$ condensation">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Julia Venturini"},"dateModified":"2015-04-01T00:00:00+00:00","datePublished":"2015-04-01T00:00:00+00:00","description":"Context: Within the core accretion scenario of planetary formation, most simulations performed so far always assume the accreting envelope to have a solar composition. From the study of meteorite showers on Earth and numerical simulations, we know that planetesimals must undergo thermal ablation and disruption when crossing a protoplanetary envelope. Thus, once the protoplanet has acquired an atmosphere, not all planetesimals reach the core intact, i.e. the primordial envelope (mainly H and He) gets enriched in volatiles and silicates from the planetesimals. This change of envelope composition during the formation can have a significant effect on the final atmospheric composition and on the formation timescale of giant planets.","headline":"Critical core mass for enriched envelopes: the role of $H_2O$ condensation","mainEntityOfPage":{"@type":"WebPage","@id":"juliaventurini.com/first%20author/2015/04/01/critical-core-paper.html"},"url":"juliaventurini.com/first%20author/2015/04/01/critical-core-paper.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="shortcut icon" href="">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/brands.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-noto-sans@0.0.72/index.min.css"> -->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
+  <!-- and it's easy to individually load additional languages -->
+  <script charset="UTF-8" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/languages/go.min.js"></script>
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <script src="/assets/js/main.js"></script>
+  <script data-goatcounter="https://jventu.goatcounter.com/count" async src="/assets/js/count.js"></script><link type="application/atom+xml" rel="alternate" href="juliaventurini.com/feed.xml" title="Julia Venturini">
+<script>MathJax={"tex":{"inlineMath":[["$","$"],["\\(","\\)"]],"displayMath":[["$$","$$"],["\\[","\\]"]]},"svg":{"fontCache":"global"}}</script><script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="site-header " role="banner">
+
+  <div class="wrapper">
+    <div class="site-header-inner">
+<span class="site-brand"><a class="site-brand-inner" rel="author" href="/">
+  <img class="site-favicon" title="Julia Venturini" src="" onerror="this.style.display='none'">
+  Julia Venturini
+</a>
+</span><nav class="site-nav">
+          <input type="checkbox" id="nav-trigger" class="nav-trigger">
+          <label for="nav-trigger">
+            <span class="menu-icon">
+              <svg viewbox="0 0 18 15" width="18px" height="15px">
+                <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"></path>
+              </svg>
+            </span>
+          </label>
+
+          <div class="trigger">
+<a class="page-link" href="/">HOME</a><a class="page-link" href="/about.html">ABOUT ME</a><a class="page-link" href="/CV.html">C.V.</a><a class="page-link" href="/publications.html">PUBLICATIONS</a><a class="page-link" href="/talks.html">TALKS</a>
+
+
+
+
+<a style="color:white" href="https://ui.adsabs.harvard.edu/search/q=orcid%3A0000-0001-9527-2903&amp;sort=date+desc"><i class="ai ai-ads ai-2x"></i></a>
+            
+            <a style="color:white" href="https://scholar.google.com/citations?user=_G3usyYAAAAJ&hl=en"><i class="ai ai-google-scholar ai-2x"></i></a>
+</div>
+        </nav>
+</div>
+  </div>
+</header>
+
+<script>
+  (function() {
+    var lastScrollY = getScrollPos().y;
+    var documentElement = document.documentElement;
+
+    function storeScrollData() {
+      var y = getScrollPos().y;var scrollStatus = "";
+
+      if (y <= 0) {
+        scrollStatus = "top";
+      } else if ((window.innerHeight + y) >= document.body.offsetHeight) {
+        scrollStatus = "bottom";
+      } else {
+        var isScrollDown = (y - lastScrollY > 0) ? true : false;
+        scrollStatus = isScrollDown ? "down" : "up";
+      }
+
+      lastScrollY = y;
+      documentElement.setAttribute("data-scroll-status", scrollStatus);
+    }
+
+    window.addEventListener('scroll', function(e) {
+      storeScrollData();
+    });
+
+    storeScrollData();
+  })();
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  function hashLocate(hashValue) {
+    hashValue = hashValue.replace(/^.*#h-/, '');
+    var element = document.getElementById(hashValue);
+
+    if (!element) {
+      return;
+    }
+
+    var header = document.querySelector('header.site-header');
+    var headerRect = header.getBoundingClientRect();
+    var headerTop = Math.floor(headerRect.top);
+    var headerHeight = Math.floor(headerRect.height);
+    var scrollPos = getScrollPos();
+    var offsetY = element.offsetTop - (headerTop + headerHeight + 20);
+
+    if (offsetY == scrollPos.y) {
+      return;
+    }
+
+    if (headerTop == 0  && offsetY > scrollPos.y) {
+      offsetY += headerHeight + 2;
+    } else if (headerTop < 0  && offsetY < scrollPos.y) {
+      offsetY -= headerHeight - 2;
+    }
+
+    smoothScrollTo(offsetY);
+  }
+
+  // The first event occurred
+  window.addEventListener('load', function(event) {
+    if (window.location.hash) {
+      hashLocate(window.location.hash);
+    }
+  });
+
+  // The first event occurred
+  window.addEventListener('click', function(event) {
+    if (event.target.matches('a')) {
+      hashLocate(event.target.getAttribute('href'));
+    }
+  });
+</script>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <div class="framework">
+  <section class="main">
+
+     <div class="post">
+  <section>
+
+
+
+
+
+
+
+
+
+<header class="post-header">
+  <h1 class="post-title p-name" itemprop="name headline">Critical core mass for enriched envelopes: the role of $H_2O$ condensation</h1>
+  <h3 class="post-subtitle">Astronomy &amp; Astrophysics</h3>
+
+  <p class="post-meta">
+    <time class="dt-published" datetime="2015-04-01T00:00:00+00:00" itemprop="datePublished"><i class="fa fa-calendar"></i> 01 Apr 2015
+    </time>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 2 mins</span>
+  </p>
+<div class="post-tags">
+<!-- <a class="post-tag" href="/tags.html#J. Venturini">#J. Venturini</a> -->
+    <a class="post-tag" href="/tags.html#J.%20Venturini">J. Venturini</a><!-- <a class="post-tag" href="/tags.html#Y. Alibert">#Y. Alibert</a> -->
+    <a class="post-tag" href="/tags.html#Y.%20Alibert">Y. Alibert</a><!-- <a class="post-tag" href="/tags.html#W. Benz">#W. Benz</a> -->
+    <a class="post-tag" href="/tags.html#W.%20Benz">W. Benz</a><!-- <a class="post-tag" href="/tags.html#M. Ikoma">#M. Ikoma</a> -->
+    <a class="post-tag" href="/tags.html#M.%20Ikoma">M. Ikoma</a>
+</div></header>
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+    <div class="post-content e-content" itemprop="articleBody">
+
+      <p>Context: Within the core accretion scenario of planetary formation, most simulations performed so far always assume the accreting envelope to have a solar composition. From the study of meteorite showers on Earth and numerical simulations, we know that planetesimals must undergo thermal ablation and disruption when crossing a protoplanetary envelope. Thus, once the protoplanet has acquired an atmosphere, not all planetesimals reach the core intact, i.e. the primordial envelope (mainly H and He) gets enriched in volatiles and silicates from the planetesimals. This change of envelope composition during the formation can have a significant effect on the final atmospheric composition and on the formation timescale of giant planets.</p>
+
+<p>Aims: We investigate the physical implications of considering the envelope enrichment of protoplanets due to the disruption of icy planetesimals during their way to the core. Particular focus is placed on the effect on the critical core mass for envelopes where condensation of water can occur.</p>
+
+<p>Methods: Internal structure models are numerically solved with the implementation of updated opacities for all ranges of metallicities and the software Chemical Equilibrium with Applications to compute the equation of state. This package computes the chemical equilibrium for an arbitrary mixture of gases and allows the condensation of some species, including water. This means that the latent heat of phase transitions is consistently incorporated in the total energy budget.</p>
+
+<p>Results: The critical core mass is found to decrease significantly when an enriched envelope composition is considered in the internal structure equations. A particularly strong reduction of the critical core mass is obtained for planets whose envelope metallicity is larger than $Z \approx 0.45$ when the outer boundary conditions are suitable for condensation of water to occur in the top layers of the atmosphere. We show that this effect is qualitatively preserved even when the atmosphere is out of chemical equilibrium.</p>
+
+<p>Conclusions: Our results indicate that the effect of water condensation in the envelope of protoplanets can severely affect the critical core mass, and should be considered in future studies.</p>
+
+<hr>
+
+<p>Publisher-link: <a href="https://www.aanda.org/articles/aa/abs/2015/04/aa24008-14/aa24008-14.html">https://www.aanda.org/articles/aa/abs/2015/04/aa24008-14/aa24008-14.html</a></p>
+
+<p>Arxiv-link: <a href="https://arxiv.org/pdf/1502.01160.pdf">https://arxiv.org/pdf/1502.01160.pdf</a></p>
+
+<hr>
+
+
+    </div>
+
+</article>
+<div class="post-nav">
+<a class="previous" href="/co-author/2011/08/01/asteroides-resonantes-paper.html" title="Origin and sustainability of the population of asteroids captured in the exterior resonance 1:2 with Mars">Origin and sustainability of the population...</a><a class="next" href="/first%20author/2016/12/06/PhD-paper.html" title="Planet formation with envelope enrichment: new insights on planetary diversity">Planet formation with envelope enrichment: new...</a>
+</div>
+<div class="post-related">
+      <div>Related Articles</div>
+      <ul>
+        <li><a class="post-link" href="/co-author/2023/11/29/HD110067.html" title="Planet formation with envelope enrichment: new insights on planetary diversity">A resonant sextuplet of sub-Neptunes transiting the bright star HD 110067</a></li>
+<li><a class="post-link" href="/co-author/2018/08/27/jupiter-hybrid-accretion.html" title="Planet formation with envelope enrichment: new insights on planetary diversity">The formation of Jupiter by hybrid pebble-planetesimal accretion.</a></li>
+<li><a class="post-link" href="/co-author/2023/06/08/TOI-5678b.html" title="Planet formation with envelope enrichment: new insights on planetary diversity">TOI-5678b: A 48-day transiting Neptune-mass planet characterized with CHEOPS and HARPS</a></li>
+<li><a class="post-link" href="/co-author/2020/10/13/pressure-bump.html" title="Planet formation with envelope enrichment: new insights on planetary diversity">Giant planet formation at the pressure maxima of protoplanetary disks II. A...</a></li>
+</ul>
+    </div>
+<div class="post-comments"></div></section>
+</div>
+
+
+  </section>
+  <section class="sidebar" style="margin-left: 15px;">
+    <!-- Get sidebar items --><style type="text/css" media="screen">
+.post-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+</style>
+
+<div class="post-menu">
+  <div class="post-menu-title">TOC</div>
+  <div class="post-menu-content"></div>
+</div>
+
+<script>
+  function generateContent() {
+    var menu = document.querySelector(".post-menu");
+    var menuContent =  menu.querySelector(".post-menu-content");
+    var headings = document.querySelector(".post-content").querySelectorAll("h2, h3, h4, h5, h6");
+
+    // Hide menu when no headings
+    if (headings.length === 0) {
+      return menu.style.display = "none";
+    }
+
+    // Generate post menu
+    var menuHTML = '';
+    for (var i = 0; i < headings.length; i++) {
+      var h = headings[i];
+      menuHTML += (
+        '<li class="h-' + h.tagName.toLowerCase() + '">'
+        + '<a href="#h-' + h.getAttribute('id') + '">' + h.textContent + '</a></li>');
+    }
+
+    menuContent.innerHTML = '<ul>' + menuHTML + '</ul>';
+
+    // The header element
+    var header = document.querySelector('header.site-header');
+
+    function doMenuCollapse(index, over_items=20) {
+      var items = menuContent.firstChild.children;
+
+      if (items.length < over_items) {
+        return;
+      }
+
+      var activeItem = items[index];
+      var beginItem = activeItem
+      var endItem = activeItem
+      var beginIndex = index;
+      var endIndex = index + 1;
+      while (beginIndex >= 0
+        && !items[beginIndex].classList.contains('h-h2')) {
+        beginIndex -= 1;
+      }
+      while (endIndex < items.length
+        && !items[endIndex].classList.contains('h-h2')) {
+        endIndex += 1;
+      }
+      for (var i = 0; i < beginIndex; i++) {
+        item = items[i]
+        if (!item.classList.contains('h-h2')) {
+          item.style.display = 'none';
+        }
+      }
+      for (var i = beginIndex + 1; i < endIndex; i++) {
+        item = items[i]
+        // if (!item.classList.contains('h-h2')) {
+          item.style.display = '';
+        // }
+      }
+      for (var i = endIndex; i < items.length; i++) {
+        item = items[i]
+        if (!item.classList.contains('h-h2')) {
+          item.style.display = 'none';
+        }
+      }
+    }
+
+    // Init menu collapsed
+    doMenuCollapse(-1);
+
+    // Active the menu item
+    window.addEventListener('scroll', function (event) {
+      var lastActive = menuContent.querySelector('.active');
+      var changed = true;
+      var activeIndex = -1;
+      for (var i = headings.length - 1; i >= 0; i--) {
+        var h = headings[i];
+        var headingRect = h.getBoundingClientRect();
+        var headerRect = header.getBoundingClientRect();
+        var headerTop = Math.floor(headerRect.top);
+        var headerHeight = Math.floor(headerRect.height);
+        var headerHeight = headerTop + headerHeight + 20;
+        if (headingRect.top <= headerHeight) {
+          var id = 'h-' + h.getAttribute('id');
+          var a = menuContent.querySelector('a[href="#' + id  + '"]');
+          var curActive = a.parentNode;
+          if (curActive) {
+            curActive.classList.add('active');
+            activeIndex = i;
+          }
+          if (lastActive == curActive) {
+            changed = false;
+          }
+          break;
+        }
+      }
+      if (changed) {
+        if (lastActive) {
+          lastActive.classList.remove('active');
+        }
+        doMenuCollapse(activeIndex);
+      }
+      event.preventDefault();
+    });
+  }
+  generateContent();
+</script>
+</section>
+</div>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+    <div class="site-footer-inner">
+      <div>Copyright © 2025 Julia Venturini</div>
+      <div>Powered by <a title="Jekyll is a simple, blog-aware, static site
+      generator." href="http://jekyllrb.com/">Jekyll</a> &amp; <a title="Yat, yet
+      another theme." href="https://github.com/jeffreytse/jekyll-theme-yat">Yat Theme</a>.</div>
+      <!-- <div class="footer-col rss-subscribe">Subscribe <a href="/feed.xml">via RSS</a></div> -->
+      <br>
+      <div>Mail: <a href="mailto:julia.venturini@unige.ch">julia.venturini@unige.ch</a> </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
